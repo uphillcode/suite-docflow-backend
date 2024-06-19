@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/suite-docflow-backend/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/suite-docflow-backend/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/suite-docflow-backend",
+  "projects": {
+    "suite-docflow-backend": {
+      "type": "application",
+      "root": "apps/suite-docflow-backend",
+      "entryFile": "main",
+      "sourceRoot": "apps/suite-docflow-backend/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/suite-docflow-backend/tsconfig.app.json"
+      }
+    },
+    "document-management-system": {
+      "type": "application",
+      "root": "apps/document-management-system",
+      "entryFile": "main",
+      "sourceRoot": "apps/document-management-system/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/document-management-system/tsconfig.app.json"
+      }
+    },
+    "workflow-management": {
+      "type": "application",
+      "root": "apps/workflow-management",
+      "entryFile": "main",
+      "sourceRoot": "apps/workflow-management/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/workflow-management/tsconfig.app.json"
+      }
+    },
+    "security": {
+      "type": "application",
+      "root": "apps/security",
+      "entryFile": "main",
+      "sourceRoot": "apps/security/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/security/tsconfig.app.json"
+      }
+    }
+  }
+}
