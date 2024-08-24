@@ -1,11 +1,12 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { DocumentTrackingService } from './document-tracking.service';
-import { CreateDocumentTrackingDto } from './dto/create-document-tracking.dto';
-import { UpdateDocumentTrackingDto } from './dto/update-document-tracking.dto';
+import { CreateDocumentTrackingDto, UpdateDocumentTrackingDto } from './dto/all.dto';
+// import { CreateDocumentTrackingDto } from './dto/create-document-tracking.dto';
+// import { UpdateDocumentTrackingDto } from './dto/update-document-tracking.dto';
 
-@Controller('document-tracking')
+@Controller('seguimiento/documento')
 export class DocumentTrackingController {
-  constructor(private readonly documentTrackingService: DocumentTrackingService) {}
+  constructor(private readonly documentTrackingService: DocumentTrackingService) { }
 
   @Post()
   create(@Body() createDocumentTrackingDto: CreateDocumentTrackingDto) {

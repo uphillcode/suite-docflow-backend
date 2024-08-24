@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { CreateDocumentTrackingDto } from './dto/create-document-tracking.dto';
-import { UpdateDocumentTrackingDto } from './dto/update-document-tracking.dto';
+import { CreateDocumentTrackingDto, UpdateDocumentTrackingDto } from './dto/all.dto';
+// import { CreateDocumentTrackingDto } from './dto/create-document-tracking.dto';
+// import { UpdateDocumentTrackingDto } from './dto/update-document-tracking.dto';
 
 @Injectable()
 export class DocumentTrackingService {

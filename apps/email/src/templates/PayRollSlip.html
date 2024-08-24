@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="telephone=no" name="format-detection">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .es-wrapper {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .es-header,
+        .es-content,
+        .es-footer {
+            width: 100%;
+            max-width: 1250px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        .es-header-body,
+        .es-content-body,
+        .es-footer-body {
+            padding: 20px;
+        }
+
+        .es-header-body {
+            background-color: #ffffff;
+        }
+
+        .es-content-body {
+            background-color: #ffffff;
+        }
+
+        .es-footer-body {
+            background-color: #ffffff;
+        }
+
+        .es-wrapper p {
+            margin: 0;
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        .es-wrapper a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+
+        .es-header-body img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .es-footer-body p {
+            font-size: 12px;
+            color: #666666;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="es-wrapper">
+        <tr>
+            <td>
+                <table class="es-header">
+                    <tr>
+                        <td class="es-header-body text-center">
+                            <p style="font-size:large;">“Año del Bicentenario, de la consolidación de nuestra
+                                Independencia, y de la
+                                conmemoración de las heroicas batallas de Junín y Ayacucho”</p>
+                            <p style="text-transform: uppercase; font-size:large">{{name}}</p>
+                        </td>
+                        <table>
+                            <tr>
+                                <td>
+
+                                </td>
+                            </tr>
+                        </table>
+                </table>
+
+                <table class="es-content">
+                    <tr>
+                        <td class="es-content-body">
+                            <p>Por la presente, se remite la Boleta de pago concerniente al mes de {{month}} del {{year}}.</p>
+                            <!-- <p>Profesional: dasdasd</p>
+                                AQUI TIENE QUE MOSTRARSE DATOS GENERALES DEL PERSONAL
+                                new feature
+                            <p>Personal: sadasdsa</p>
+                            <p>asdkjaskldsa: asdaskdjskald</p>
+                            <p>Asimismo, señalar que se ha remitido copias certificadas</p> -->
+                            <p>Atentamente,</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="es-content">
+                    <tr>
+                        <td class="es-content-body">
+                            <table>
+                                <tr>
+                                    <td style="width: 50%;">
+                                        <img src="https://ehpwehr.stripocdn.email/content/guids/CABINET_c440fabe17adb1c596f332f470268e78bf8c079b837312f192ef82bb6ae065f7/images/unnamed_1.jpg"
+                                            alt="Image" style="width: 356px; height: 100px; border: 1px solid #000cb4;">
+                                    </td>
+                                    <td style="width: 50%;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="es-content">
+                    <tr>
+                        <td class="es-content-body">
+                            <p><a href="{{officeEmail}}">{{officeEmail}}</a></p>
+                            <p>{{office}}</p>
+                            <p><strong>Contacto:</strong>{{phone}}</p>
+                            <p><strong>Correo:</strong><a href="{{email}}">{{email}}</a></p>
+                            <p><strong>Dirección:</strong>{{adreesStreet}}</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="es-footer">
+                    <tr>
+                        <td class="es-footer-body">
+                            <p>Este correo electrónico es confidencial y está destinado únicamente al destinatario
+                                especificado en el mismo. Si has recibido este correo por error, por favor notifícanos
+                                de inmediato. Cualquier uso no autorizado, difusión o distribución de la información
+                                contenida en este correo electrónico está prohibido</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
